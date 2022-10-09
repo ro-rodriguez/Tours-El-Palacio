@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Tours El Palacio</title>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0, maximum-scale=1"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="css/estilo.css" rel="stylesheet" media="screen and (max-width:1366px)" />
+	<link href="css/mobile.css" rel="stylesheet" media="screen and (max-width:480px)" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<div class="principal">	
+			<h1>El palacio</h1>
+			<p class="eslogan">haz Historia</p>
+		</div>
+		<nav id="menu">
+			<ul id="hamburguesa">
+				<li><a href="#menu">abrir</a></li>
+				<li><a href="#">cerrar</a></li>
+			</ul>
+			<ul id="barra">
+				<li class="lista"><a href="index.html">Inicio</a></li><!--
+				--><li class="lista"><a href="itinerario.html">Turismo</a></li><!--
+				--><li class="lista"><a href="informacion.html">Información</a></li><!--
+				--><li class="lista"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+<main class="cuerpo">
+	<picture class="heroe">
+		<source srcset="imagenes/city_cel.jpg" media="(max-width:480px)">
+		<img src="imagenes/city.jpg" alt="Palacio de la Moneda"/>
+	</picture>
+	<section class="contenido">
+		<h2 class="encabezados-main">Contacto</h2>
+		<div class="contenedores-contacto">		
+			<div class="contenedor-contacto" id="cont-1">
+				<h3 id="titulo-info">Información</h3>
+				<ul>
+					<li class="pastillas">
+						<i class="fas fa-home"></i>
+						<p><span class="info">Domicilio: </span> Plaza de la Ciudadanía 26, Santiago de Chile</p>
+					</li>
+					<li class="pastillas">
+						<i class="fas fa-phone-alt"></i>
+						<p><span class="info">Teléfono: </span><a href="+56226904000">(+56 2) 2690 4000</a></p>
+					</li>
+					<li class="pastillas">
+						<i class="fas fa-envelope"></i>
+						<p><span class="info">Email: </span><a href="mailto:info@elpalacio.cl">info@elpalacio.cl</a></p>
+					</li>
+					<li class="pastillas">
+						<i class="fas fa-clock"></i>
+						<p ><span class="info">Atención: </span> Lunes a Domingo de 10 a 18 hs.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="contenedor-contacto" id="cont-2">
+				<h3 id="titulo-mapa">Cómo llegar</h3>
+				<figure id="gm">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m/12!1m3!1d3329.245704342136!2d-70.65605858509174!3d-33.44290460451059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a6fd47e465%3A0x5d0fa12b4d88ae82!2sPalacio%20de%20La%20Moneda!5e0!3m2!1ses-419!2sar!4v1592508437715!5m2!1ses-419!2sar" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</figure>
+			</div>
+			<div class="contenedor-contacto" id="cont-3">
+				<h3 id="reserva">Reserva tu visita</h3>
+				<form class="form-contacto" action="enviar_formulario.php" method="POST" enctype="multipart/form-data">
+					<div class="formulario">
+						<label for="nombre">Nombre y Apellido *</label>
+						<input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+					</div>
+					<div class="formulario">
+						<label for="tipo">Tipo de documento *</label>
+						<select  name="tipo" id="tipo">
+							<option value="dni">DNI</option>
+							<option value="pasaporte">Pasaporte</option>
+						</select>
+					</div>
+					<div class="formulario">
+						<label for="documento">Documento *</label>
+						<input type="text" id="documento" required placeholder="Ingrese su documento">
+					</div>
+					<div class="formulario">
+						<label for="foto">Adjuntar Documento *</label>
+						<input id="foto" type="file" accept="image/png, image/jpeg" name="foto">
+					</div>
+					<div class="formulario">
+						<label for="telefono">Teléfono</label>		
+						<input type="tel" name="telefono" id="telefono" required placeholder="011-555-5555">
+					</div>
+					<div class="formulario">
+						<label for="mail">Mail*</label>
+						<input type="email" name="mail" id="mail" required placeholder="tumail@mail.com">
+					</div>
+					<div class="formulario">
+						<label for="fecha">Fecha del tours *</label>
+						<input type="date" name="fecha" id="fecha" min="2021-03-01" max="2022-05-31">
+					</div>
+					<div class="formulario">
+						<label for="hora">Horario del tours *</label>
+						<input type="time" name="hora" id="hora"/>
+					</div>
+					<div class="formulario botones">
+						<span id="envia"><input type="submit" value="Enviar" id="Enviar"></span>
+						<span id="borra"><input type="reset" value="Borrar" id="Borrar"></span>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</section>	
+</main>
+<footer>
+	<ul class="redes">
+		<li><a href="http://www.facebook.com/TourPalacio" target="_blank">Facebook</a></li>
+		<li><a href="http://www.instagram.com/TourPalacio" target="_blank">Instagram</a></li>
+		<li><a href="http://www.pinterest.com/TourPalacio" target="_blank">Pinterest</a></li>
+		<li><a href="http://www.youtube.com/TourPalacio" target="_blank">Youtube</a></li>
+	</ul>
+	<details class="piedepagina">
+		<summary>Copyright © 2022 El palacio Tours Todos los derechos reservados</summary>
+		<p>Rodríguez Castro Elsa | DWN1B | Docente: Mabel Garcia</p>
+	</details>
+	
+</footer>
+</body>
+</html>

@@ -1,0 +1,239 @@
+body {
+    background-image: none;
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+}
+/************** Header **************/
+header{
+    max-width: 100%;
+    text-align: center;
+    height: 6em;
+    line-height: 6em;
+}
+h1{
+    font-size: 1.4em;
+    top: -10px;
+    right: 1.2em;
+    position: absolute;
+    z-index:3;
+}
+.eslogan {
+    font-size: 1.2em;
+    position: absolute;
+    top: 22px;
+    right: 2em;
+    z-index:2;
+}
+
+/************** Menu **************/
+#menu{
+    max-width: 100%;
+    line-height: 2em;
+}
+#menu .lista{
+    width: 100%;
+}
+#menu .lista:hover #absoluta{
+    display:contents;
+}
+#menu #barra .lista a{  
+    text-align: left;
+    padding-left: 15px;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+    padding-top:5px;
+}
+#menu #barra .lista #absoluta li a{
+    color: #0039a6;
+    padding-left: 30px;
+}
+#hamburguesa li {
+	display: block;
+}
+#hamburguesa li:last-child{
+    display: none;
+}
+#barra{
+    left: -100vw;
+}
+#menu:target #hamburguesa li:first-child{
+    display: none;
+}
+#menu:target #hamburguesa li:last-child{
+    display: block;
+}
+#menu:target #barra{
+    height: 70vh;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#hamburguesa li{
+    width: 2.5em;
+    margin-left: 1em;
+    list-style: none;
+}
+#hamburguesa li a{
+    display: block;
+    height: 2em;
+    text-indent: -500px;
+    overflow: hidden;
+    background: url(../imagenes/menu.png) no-repeat center center;
+    background-size: cover;
+    margin-top: 2em;
+    font-family: 'gobold regular', sans-serif;
+}
+#barra{
+    position: absolute;
+    top: 6em;
+    left: 0;
+    width: 100%;
+    transition: all 500ms;
+    height: 0;
+    overflow: hidden;
+}
+#barra .lista{
+    font-size: 1em;
+    border: 1px solid white;
+}
+.heroe{
+    max-width: 480px;
+}
+
+/**********Main - Index**************/
+.contenido{
+    padding-left: 30px;
+	padding-right: 30px;
+}
+
+.columnas{
+    column-count: 1;
+}
+/**********Galeria - Index **************/
+
+#galeria article:target > div{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: left;
+}
+.titulomodal{
+    margin: 0;
+    width: 100%;
+}
+.fotomodal{
+    display:inline;
+    font-size:0;
+    width:100%
+}
+#uno, #dos, #tres, #cuatro{
+    max-width:100%;
+    margin: 20px 0px;
+}
+#galeria article div .fotomodal{
+    margin:auto;
+    text-align: center;
+}
+.fecha {
+    text-align: center;
+}
+#galeria article:target > div .fotomodal{
+    display: none;
+}
+
+/****************Main - Itinerario.html e Informacion.html ****************/
+#presentacion-turismo{
+    padding-bottom: 70px;
+}
+.contenedores > li{
+    padding-bottom: 80px;
+
+}
+.contenedor{
+    display: block;
+    text-align:center;
+}
+.primer-bloque{
+	width: 100%;
+    padding-bottom: 30px;
+    text-align: left;
+}
+.segundo-bloque img{
+    text-align:center;
+}
+.primer-bloque h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+/******************Newsletter********************/
+.suscribite{
+    height: 280px;
+}
+.suscribite h2{
+    display: inline-block;
+	font-size: 1.5rem;
+	margin-bottom: 1em;
+}
+.correo{
+    width: 80vw;
+    margin-bottom: 20px;
+}
+/**************** Footer ************************/
+footer{
+    max-width: 100%;
+    padding: 2em;
+}
+.suscribite{
+    max-width:100%;
+    background-image: none;
+}
+#mail{
+    width: 80vw;
+}
+#envio{
+    width: 20vw;
+    margin:auto;
+}
+/*************** Contacto ***************/
+
+.contenedores-contacto{
+    max-width: 100%;
+}
+.contenedor-contacto{
+    margin: 0;
+}
+#cont-1{
+	padding-right: 0;
+    padding-bottom: 40px;
+}
+#cont-2{
+	padding-left: 0;
+    padding-bottom: 60px;
+}
+.formulario{
+    flex-wrap: wrap;
+}
+.form-contacto{
+	width: 85%;
+    padding: 0;
+    border:0;
+    background-color: #FFFFFF;
+}
+.formulario label{
+    flex: 1 80%;
+}
+.formulario input{
+    flex: 1 80%;
+}
+/********************************Main - Gracias ***************/
+.contenido-gracias{
+    padding: 30px 10px;
+}
+.contenido-gracias p{
+    padding: 10px 0 20px;
+}

@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: "Inherit", aleo;
+	background-image: url(../imagenes/marmol.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 990px;
+	margin:auto;
+}
+/************** Header **************/
+header{
+	background-color: #0039a6;
+	width: 990px;
+	margin: auto;
+	padding-top: 1em;
+}
+.principal{	
+	background-image: url(../imagenes/logo.png);
+	background-repeat: no-repeat;
+	background-position: 320px -4px;
+}
+
+h1{
+	text-align: center;
+	font-family: "Inherit", aleo;
+	font-size: 55px;
+	color: #FFFFFF;
+	text-shadow: -2px 1px 1px red;
+}
+.eslogan {
+	text-align: center;
+	font-family: "Afrile script", sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top:-10px;
+	padding-bottom: 10px;
+	color: #000000;
+}
+/************** Menu **************/
+#menu{
+	background-color: #0039a6;
+	width: 990px;
+	margin: auto;
+}
+#menu ul{
+	list-style: none;
+}
+#menu .lista{
+	float: left;
+	width: 25%;
+}
+#menu #barra .lista a{
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	font-family: Aleo;
+	font-size: 1.2em;
+	background-color: #000000;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+.listita{
+	position: relative;
+}
+#menu #absoluta{
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+#menu #barra .lista a:hover{
+	background-color: #5D5B5B;
+	color: #FFFFFF;
+}
+#menu .lista:hover #absoluta{
+	background-color: #5D5B5B;
+	display: block;
+	color: #FFFFFF;
+}
+#hamburguesa li {
+	display: none;
+}
+/**********Main**************/
+.cuerpo{
+	background-color: #FFFFFF;
+	padding-bottom: 20px;
+	font-size: 1em;
+	font-family: "Inherit",aleo;
+}
+/**********Main - Index**************/
+.contenido{
+	padding-left: 80px;
+	padding-right: 80px;
+	font-family:"Inherit", Aleo;
+	font-size: 1rem;
+	line-height: 1.35rem;
+	text-align: left;
+}
+.encabezados-main{
+	padding-top: 2em;
+	font-family: "Inherit", Aleo;
+	font-weight: bold;
+	font-size: 1.75rem;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	text-align: right;
+	color: #0B0442;
+	border-bottom: 4px solid #000000;
+}
+.columnas{
+	padding-top: 2em;
+	column-count: 2;
+	column-gap: 3em;
+}
+.texto-city{
+	padding-top: 2em;
+}
+/**********Galeria - Index **************/
+#galeria{
+	text-align: center;
+}
+#uno, #dos, #tres, #cuatro{
+	margin: 32px;
+}
+#galeria article{
+	display: inline-block;
+	vertical-align:top;
+	width: 326px;
+	height: 470px;
+	font-size: 1rem;
+	text-align:left;
+	background:rgb(205, 205, 205);
+}
+#galeria article .mastexto{
+	display: none;
+	margin: 0;
+	color: #0B0442;
+	font-family:Aleo;
+}
+#galeria article:target{
+	z-index: 2;
+	position: fixed;
+	margin:0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(1, 1, 90, 0.699);
+}
+#galeria article div .fotomodal{
+	margin: auto;
+	text-align: center;
+}
+#galeria article:target > div{
+	z-index: 1;
+	padding: 20px;
+	width: 700px;
+	margin: auto;
+	text-align:center;
+	background: rgb(255, 254, 254);
+}
+#galeria article:target > div .fotomodal{
+	display: inline;
+	margin:0 auto;
+	padding: 5px;
+	border:transparent;
+}	
+#galeria article:target > div .mastexto{
+	display: block;
+	font-size: 1rem;
+	font-family: "Aleo", sans-serif;
+}
+#galeria article:target > div a:first-of-type{
+	width: 30px;
+	height: 30px;
+	background: url(../imagenes/cerrar.png);
+	display: block;
+}	
+.titulomodal{
+	margin: auto;
+	text-transform: uppercase;
+	text-align: center;
+	width: 280px;
+	border-bottom: 1px solid black;
+	font-size: 1rem;
+	padding:5px 0;
+}
+.fotomodal{
+	max-width: 326px;
+}
+.texto{
+	font-size: 1rem;
+	font-family: Aleo;
+	color: #0B0442;
+	padding: 0.5rem 1.2em;
+}
+.mastexto{
+	padding-bottom: 15px;
+	font-size: 1rem;
+	padding: 0.5rem 1.2em;
+}
+.fecha{
+	margin-right: 10px;
+	font-size: 1rem;
+	font-family: "Inherit", aleo;
+	font-weight: bold;
+	color: #0B0442;
+	text-align: right;
+}
+/**********Video - Index **************/
+
+#videoyt figure{
+	text-align: center;
+	line-height: 0;
+	width: 80vw;
+	height: calc(80vw * 315/560);
+	max-width: 560px;
+	max-height: 315px;
+	margin:auto;
+	margin-top:35px;
+	margin-bottom: 60px;
+
+}
+#yt iframe{
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/****************Main - Itinerario.html e Informacion.html ****************/
+
+.presentacion-main{
+	padding-top: 30px;
+	padding-bottom: 80px;
+	text-align: left;
+}
+.contenedores > li{
+	list-style: none;
+	padding-bottom: 100px;
+}
+.contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+.primer-bloque{
+	width: 50%;
+}
+.primer-bloque ul{
+	padding-left: 18px;
+}
+.segundo-bloque{
+	margin: auto 0px;	
+}
+.primer-bloque h3{
+	font-size: 1.5rem;
+	color: rgb(236, 94, 92);
+	padding-bottom: 15px;
+}
+/******************Contacto********************/
+
+.contenedores-contacto{
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.contenedor-contacto h3{
+	margin: 2rem 1rem;
+	font-size: 2rem;
+}
+.form-contacto{
+	width: 600px;
+	border: solid 3px rgb(236, 94, 92);
+	background-color: #f3f1f5;
+	border-radius: 8px;
+	padding: 2rem;
+}
+
+#cont-1{
+	flex: 1 400px;
+	padding-right: 20px;
+	
+}
+#cont-2{
+	flex: 1 400px;
+	padding-left: 20px;
+}
+/********Contacto: Informacion**********/
+.contenedor-contacto #titulo-info{
+	margin-left: 0;
+}
+.pastillas{
+	list-style: none;
+	display:flex;
+	margin: 2em 0;
+}
+.pastillas p{
+	text-align: left;
+}
+i {
+    color: rgb(236, 94, 92);
+	margin-right: 0.5em;
+}
+.fas {
+    font-size: 35px;
+}
+a {
+    text-decoration: none;
+}
+.info{
+	font-size: 1.2em;
+	font-weight: 800;
+	color: #0B0442;
+}
+.pastillas p{
+	margin: auto 0;
+}
+.pastillas p a{
+	color: #000;
+}
+/********Contacto: Mapa **********/
+#gm{
+	text-align: center;
+	line-height: 0;
+	margin: auto;
+}
+#gm iframe{
+	border: 0;
+	width: 100%;
+	max-width: 600px;
+}
+.contenedor-contacto #titulo-mapa{
+	margin-left: 0;
+}
+/********Contacto: Formulario ****************/
+.contenedor-contacto form{
+	margin: 2em 1em;
+}
+.formulario{
+	display: flex;
+	margin-bottom: 1.2rem;
+}
+.formulario label{
+	flex: 1 300px;
+	font-size: 1.2em;
+	font-weight: 800;
+	color: #0B0442;
+}
+.formulario input{
+	flex: 1 400px;
+	border: solid 1px #0B0442;
+	border-radius: 3px;
+	padding: 0.25rem 0;
+}
+.formulario select{
+	flex: 1 400px;
+	border: solid 1px #0B0442;
+	border-radius: 3px;
+	padding: 0.25rem 0;
+}
+.formulario #foto{
+	border: 0;
+}
+.formulario #fecha{
+	padding: 0.10rem 0;
+}
+/******** Botones Formulario: Borrar y Enviar ****************/
+
+.botones{
+	display:flex;
+	flex-direction: row-reverse;
+	margin: 0;
+}
+.botones span input{
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	border: 0;
+	margin-left: 20px;
+}
+#borra input{
+	background-color: #bfbfc1;
+	font-weight: bold;
+	color:#474646
+}
+#envia input{
+	background-color: #0039a6;
+	color: #FFFFFF;
+}
+
+/******************Newsletter********************/
+.suscribite{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 1rem;
+	font-family: Chivo, sans-serif;
+	background-image: url(../imagenes/palacio.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 84%;
+	height: 350px;
+	padding-top: -100px;
+}
+.suscribite h2{
+	font-size: 1.7rem;
+	margin-bottom: 0.3rem;
+}
+.correo{
+	display:inline-block;
+	width: 500px;
+	height: 30px;
+	outline: none;
+	border: solid 1px black;
+	font-size: 17px;
+	border-radius: 4px;
+}
+#envio{
+	width: 200px;
+	height: 30px;
+	background-color: rgb(236, 94, 92);
+	font-size: 1rem;
+	color: rgb(255, 255, 255);
+	border: solid 1px black;
+	border-radius: 4px;
+}
+/**********FOOTER ******************/
+footer{
+	background-color: #000000;
+	width: 990px;
+	margin: auto;
+	margin-top: -33px;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+.redes{
+	text-align:center;
+}
+.redes li{
+	display: inline-block;
+	text-align: center;
+}
+.redes li a{
+	display: inline-block;
+	background: url(../imagenes/redes.png);
+	margin-right: 20px;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+}
+.redes li:nth-child(1) a{
+	background-position:0px 0px;
+}
+.redes li:nth-child(2) a{
+	background-position:-32px 0px;
+}
+.redes li:nth-child(3) a{
+	background-position:-64px 0px;
+}
+.redes li:nth-child(4) a{
+	background-position:-128px 0px;
+}
+.redes li:nth-child(1) a:hover{
+	background-position:0px -32px;
+}
+.redes li:nth-child(2) a:hover{
+	background-position:-32px -32px;
+}
+.redes li:nth-child(3) a:hover{
+	background-position:-64px -32px;
+}
+.redes li:nth-child(4) a:hover{
+	background-position:-128px -32px;
+}
+.piedepagina{
+	padding-top: 2em;
+	color:white;
+	font-size: 0.6rem;
+	font-family: Chivo, sans-serif;
+	text-align: center;
+}
+/**********Main - Gracias**************/
+.contenido-gracias{
+	padding: 100px;
+	font-family:"Inherit", Aleo;
+	font-size: 1rem;
+	line-height: 1.35rem;
+	text-align: center;
+}
+.contenido-gracias h2{
+	font-size: 1.9rem;
+	color: #0039a6;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+.contenido-gracias p{
+	display: inline-block;
+	color: #0B0442;
+	padding-top: 10px;
+	padding-right: 10px;
+	font-size: 1.1rem;
+}
+.contenido-gracias a{
+	background-color: #8f9091;
+	color: #FFFFFF;
+	padding: 0.3rem 0.5rem;
+	border-radius: 10px;
+}
+.contenido-img{
+	padding: 20px 0px;
+}
+.contenido-gracias .frase-gracias{
+	font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+	
+	
